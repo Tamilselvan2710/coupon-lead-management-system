@@ -5,7 +5,7 @@ const rateLimiter = require("./middleware/rateLimiter");
 const app = express();
 
 app.use(cors({
-  origin: "https://your-vercel-app.vercel.app"
+  origin: "https://coupon-lead-management-system.vercel.app/"
 }));
 app.use(express.json());
 app.use("/api", rateLimiter);
