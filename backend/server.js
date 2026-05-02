@@ -7,6 +7,7 @@ const app = express();
 app.use(cors({
   origin: "https://coupon-lead-management-system.vercel.app/"
 }));
+
 app.use(express.json());
 app.use("/api", rateLimiter);
 
