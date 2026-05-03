@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const cors = require("cors");
 const rateLimiter = require("./middleware/rateLimiter");
@@ -5,7 +7,7 @@ const rateLimiter = require("./middleware/rateLimiter");
 const app = express();
 
 app.use(cors({
-  origin: "https://coupon-lead-management-system.vercel.app/"
+  origin: "https://coupon-lead-management-system.vercel.app"
 }));
 
 app.use(express.json());
